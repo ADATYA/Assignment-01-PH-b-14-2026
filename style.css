@@ -142,14 +142,13 @@ nav ul li a{
 }
 
 /* Card section css file starting */
-/* মূল সেকশন */
+
 .pricing-section {
   padding: 80px 20px;
   background-color: #ffffff;
   font-family: sans-serif;
 }
 
-/* হেডার (টাইটেল ও সাবটাইটেল) */
 .pricing-header {
   text-align: center;
   margin-bottom: 50px;
@@ -167,17 +166,16 @@ nav ul li a{
   font-size: 1rem;
 }
 
-/* ৩টি কার্ডের গ্রিড লেআউট */
 .pricing-grid {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* পাশাপাশি ৩টি কলাম */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
-  align-items: stretch; /* সব কার্ডের উচ্চতা সমান রাখবে */
+  align-items: stretch; 
 }
 
-/* সাধারণ কার্ডের স্টাইল */
+
 .pricing-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
@@ -187,19 +185,18 @@ nav ul li a{
   flex-direction: column;
 }
 
-/* ৩ নম্বর কার্ডের হালকা ব্যাকগ্রাউন্ড */
+
 .pricing-card.light-bg {
   background-color: #f8fafc;
 }
 
-/* ২ নম্বর (PRO) কার্ডের ডার্ক হাইলাইট স্টাইল */
+
 .pricing-card.highlighted {
-  background-color: #0b1329; /* গাঢ় নীল/কালো */
+  background-color: #0b1329;
   color: #ffffff;
   border: none;
 }
 
-/* কার্ডের ভেতরের লেখার সাইজ ও কালার */
 .card-header {
   margin-bottom: 20px;
 }
@@ -211,7 +208,7 @@ nav ul li a{
   letter-spacing: 1px;
 }
 .highlighted .plan-name {
-  color: #38bdf8; /* প্রোর জন্য হালকা নীল */
+  color: #38bdf8; 
 }
 
 .price {
@@ -238,12 +235,12 @@ hr {
   border-top: 1px solid #1e293b;
 }
 
-/* ফিচারের তালিকা (Bullet Points) */
+
 .features-list {
   list-style: none;
   padding: 0;
   margin: 0 0 40px 0;
-  flex-grow: 1; /* বাটনগুলোকে যেন সবসময় একদম নিচে সমান লাইনে রাখে */
+  flex-grow: 1; 
 }
 
 .features-list li {
@@ -257,7 +254,7 @@ hr {
   color: #cbd5e1;
 }
 
-/* বুলেটের জায়গায় ডট চিহ্ন দেওয়া */
+
 .features-list li::before {
   content: "•";
   color: #2563eb;
@@ -269,7 +266,7 @@ hr {
   color: #38bdf8;
 }
 
-/* বাটনের কমন স্টাইল */
+
 .btn {
   display: block;
   text-align: center;

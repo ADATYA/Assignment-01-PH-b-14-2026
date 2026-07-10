@@ -1,0 +1,530 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Open Sans", sans-serif;
+} 
+header{
+     background-color: rgb(223, 223, 223);
+}
+/* Common Button Style section */
+.common-btn{
+    background-color: rgb(240, 58, 113);
+    padding:10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 17px;
+    color:azure;
+    border:none;
+}
+
+nav{
+   
+    display:flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin:auto;
+    padding: 12px 0;
+}
+/* nav bar text option style section */
+nav ul{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    gap:30px;
+    align-items: center;
+
+}
+/* Nav bar text option section */
+nav ul li a{
+    text-decoration: none;
+    color:black
+}
+/* Hero section css file */
+.banner-section {
+  width: 100%;
+  min-height: 100vh; 
+  background-image: url('./assets/banner.jpg'); 
+  background-size: cover;
+  background-position: center;
+  
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;   
+}
+.banner-content {
+  max-width: 800px; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  align-items: center;   
+  height: 620px; 
+  padding: 25px;
+  color:white;
+}
+.banner-content h1 {
+  font-size: 4rem;
+  margin-top: 0px; 
+  line-height: 1.8;
+}
+.banner-content p {
+  font-size: 1.1rem;
+  margin: 0px; 
+  max-width: 90%; 
+}
+.common-btn {
+  margin-top: auto; 
+}
+
+/* Speaker section started */
+.speakers-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #000000;
+}
+
+.speakers-grid {
+  max-width: 1200px;
+  margin: 0 auto; 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px; 
+}
+
+
+.speaker-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden; 
+  display: flex;
+  flex-direction: column;
+}
+/* Speaker sectin continue */
+.speaker-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.speaker-info {
+  padding: 24px;
+}
+
+.category {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #ff3791; 
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.speaker-info h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #040508;
+  margin-bottom: 6px;
+}
+
+.speaker-info p {
+  font-size: 0.95rem;
+  color: #6b7280; 
+}
+
+/* Card section css file starting */
+/* মূল সেকশন */
+.pricing-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+/* হেডার (টাইটেল ও সাবটাইটেল) */
+.pricing-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.pricing-header p {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+/* ৩টি কার্ডের গ্রিড লেআউট */
+.pricing-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* পাশাপাশি ৩টি কলাম */
+  gap: 30px;
+  align-items: stretch; /* সব কার্ডের উচ্চতা সমান রাখবে */
+}
+
+/* সাধারণ কার্ডের স্টাইল */
+.pricing-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ৩ নম্বর কার্ডের হালকা ব্যাকগ্রাউন্ড */
+.pricing-card.light-bg {
+  background-color: #f8fafc;
+}
+
+/* ২ নম্বর (PRO) কার্ডের ডার্ক হাইলাইট স্টাইল */
+.pricing-card.highlighted {
+  background-color: #0b1329; /* গাঢ় নীল/কালো */
+  color: #ffffff;
+  border: none;
+}
+
+/* কার্ডের ভেতরের লেখার সাইজ ও কালার */
+.card-header {
+  margin-bottom: 20px;
+}
+
+.plan-name {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #64748b;
+  letter-spacing: 1px;
+}
+.highlighted .plan-name {
+  color: #38bdf8; /* প্রোর জন্য হালকা নীল */
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0f172a;
+  margin: 10px 0 5px 0;
+}
+.highlighted .price {
+  color: #ffffff;
+}
+
+.price-meta {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #f1f5f9;
+  margin-bottom: 25px;
+}
+.highlighted hr {
+  border-top: 1px solid #1e293b;
+}
+
+/* ফিচারের তালিকা (Bullet Points) */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  flex-grow: 1; /* বাটনগুলোকে যেন সবসময় একদম নিচে সমান লাইনে রাখে */
+}
+
+.features-list li {
+  font-size: 0.95rem;
+  color: #334155;
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 15px;
+}
+.highlighted .features-list li {
+  color: #cbd5e1;
+}
+
+/* বুলেটের জায়গায় ডট চিহ্ন দেওয়া */
+.features-list li::before {
+  content: "•";
+  color: #2563eb;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+.highlighted .features-list li::before {
+  color: #38bdf8;
+}
+
+/* বাটনের কমন স্টাইল */
+.btn {
+  display: block;
+  text-align: center;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline {
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+.btn-outline:hover {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-solid {
+  background-color: #f42d80;
+  color: #ffffff;
+}
+.btn-solid:hover {
+  background-color: #4045e8;
+}
+/* Change the card name color */
+.plan-name{
+    color:#f42d80;
+}
+
+.btn-dark-outline {
+  border: 1px solid #0f172a;
+  color: #0f172a;
+}
+.btn-dark-outline:hover {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* AI Missing link section started for css part */
+
+/* hackerthoc section main section */
+.hackathon-section {
+  padding: 100px 20px;
+  background-color: #f8fafc; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hackathon-container {
+  max-width: 1200px;
+  margin: 0 auto; /* container section */
+}
+
+/* header desigh */
+.hackathon-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px auto;
+}
+
+.hackathon-header .badge {
+  background-color: #e0e7ff;
+  color: #e60fa2;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.hackathon-header h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+}
+
+.hackathon-header p {
+  color: #475569;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Prize pool highligh */
+.prize-pool-box {
+  background: linear-gradient(135deg, #4f46e5, #ef0d91);
+  color: white;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4);
+}
+
+.prize-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  opacity: 0.9;
+  display: block;
+}
+
+.prize-amount {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 5px;
+}
+
+/* Teack gred leayout column 3 */
+.hackathon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* simple card desigh section */
+.track-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* pop up and highlight section */
+.track-card.central-track {
+  border: 2px solid #4f46e5;
+  transform: scale(1.03);
+}
+
+.track-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.track-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.track-card h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.track-card p {
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.track-prize {
+  display: inline-block;
+  font-weight: 700;
+  color: #d10591; /* prize tag */
+  background-color: #ecfdf5;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+/* action btn*/
+.hackathon-action {
+  text-align: center;
+}
+
+.btn-hackathon {
+  display: inline-block;
+  background-color: #ed1e7f; 
+  color: white;
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background 0.3s ease;
+}
+
+.btn-hackathon:hover {
+  background-color: #1e293b;
+}
+
+/* Footer Section Started */
+.site-footer {
+  background-color: #0f172a; 
+  color: #94a3b8; 
+  padding: 40px 20px 20px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.footer-top {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-logo .logo-img {
+  height: 40px; 
+  display: block;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials a {
+  color: #94a3b8;
+  background-color: #1e293b; 
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+
+.footer-socials a:hover {
+  background-color: #cf0a80; 
+  color: #ffffff;          
+  transform: translateY(-3px);
+}
+
+
+.footer-divider {
+  border: 0;
+  border-top: 1px solid #334155;
+  margin: 30px 0 20px 0; 
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #eef0f3;
+}
+
